@@ -1,0 +1,19 @@
+package main
+
+import (
+	"github.com/gonutz/prototype/draw"
+)
+
+func main() {
+
+	// create application window
+	height := 350
+	width := 550
+
+	draw.RunWindow("Hello everyone", width, height,
+		func(window draw.Window) {
+			window.DrawText("Hello everyone", 0, 0, draw.White)
+		},
+	)
+
+}
